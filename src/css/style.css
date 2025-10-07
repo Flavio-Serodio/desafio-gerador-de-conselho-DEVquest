@@ -10,58 +10,43 @@ body {
     
 }
 main {
-    width: 400px;
-    height: 260px;
+    max-width: 450px;
     background-color: hsl(217, 19%, 24%);
     display: flex;
-    text-align: center;
     flex-direction: column;
     border-radius: 15px;
-    gap:20px;
     align-items: center;
-}
-.conselho {
-    text-align: ;
-
+    padding: 20px;
 }
 
 .n-conselho {
     color: var(--cor-botao);
-    padding: 5px;
-    margin-top:25px;
-    font-weight: 400;
+    text-transform:uppercase;
+    letter-spacing: 5px;
+    margin-top: 30px;
+}
+.conselho {
+    font-size: 23px;
+    padding: 23px;
+    text-align:center ;
+
 }
 
 button {
     background-color: var(--cor-botao);
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    position: relative;
-    top: 45px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
     border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    transform: translateY(85%);
 }
 
-.dado{
-    width: 15px;
-}
+
 .linha-ilustrativa {
-    width: 350px;
-    position: relative;
-    top: 40px;
-    
+    width:100%; 
 }
-@media (max-width:576px) {
-    main{width:270px
-    }
-    button{
-        top: 27px;
-    }
-    .linha-ilustrativa{
-        width: 200px;
-        top: 25px;
-    }
+
+button:hover {
+    box-shadow: 0  5px 15px var(--cor-botao);
+    cursor: pointer;
 }
